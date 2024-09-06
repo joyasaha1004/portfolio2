@@ -1,0 +1,837 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+html,
+body{
+    width: 100%;
+  background: #000;
+  overflow-x: hidden;
+}
+.intro-section{
+   
+    width: 100%;
+    height: 977px;
+ background: rgba(3, 3, 15, 0.932);
+
+}
+
+
+.heading 
+{
+position:absolute;
+width: 700px;
+display: flex;
+justify-content: center;
+transform: rotateY(20deg);
+align-items: center;
+margin:  290px 30px;
+font-size: 5.6vw;
+font-family:"Poppins", sans-serif;
+background: rgba(255, 255, 255, 0.041);
+
+border: 2px solid rgba(163, 221, 255, 0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.heading h1{
+    color: rgb(255, 255, 255);
+backdrop-filter: blur(5px);
+
+}
+.heading h1 span{
+    display: inline-block;
+}
+.hero-section{
+    width: 100%;
+    color: white;
+   margin-top:450px;
+    background: rgba(9, 9, 22, 0.932);
+    height:770px;
+   overflow: hidden;
+   position: relative;
+   
+}
+nav{
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.103);
+    backdrop-filter: blur(5px);
+   
+    height: 80px;
+    box-shadow: 0px 25px 25px rgba(85, 85, 85, 0.164);
+}
+nav .logo{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin-top: 20px;
+   
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo h1{
+    font-family:"Poppins", sans-serif ;
+    font-size: 25px;
+    padding: 17px 40px;
+}
+.logo i{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 14px 20px;
+    cursor: pointer;
+}
+.list{
+     height: 770px;
+    padding: 110px 40px;
+    font-size: 3vw;
+    font-family:"Poppins", sans-serif ;
+    position:absolute;
+    margin-left: 2700px ;
+    margin-top: -620px;
+   background: rgba(255, 255, 255, 0.041);
+    backdrop-filter: blur(10px); 
+ 
+    width: 400px;
+    right: -12%;
+  
+}
+.list h4{
+   margin-bottom: 35px;
+   font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: -20px 10px;
+}
+.list i{
+    position: absolute;
+    top: 4%;
+    right: 15%;
+    border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.list h4::after{
+    content: '';
+    position: absolute;
+   width: 0px;
+   height: 3px;
+   bottom: -10px;
+   left: 0px;
+   background: rgba(121, 206, 255, 0.5);
+transition: 0.3s;
+}
+.list h4:hover::after{
+    width: 100%;
+
+}
+.hero{
+    margin-top:100px ;
+    padding: 30px;
+}
+.my-img img{
+    width: 57vw;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+.my-img{
+    margin-left: 20px;
+    position:absolute;
+    width:57vw ;
+    height: 38vw;
+    border-radius: 22px;
+    background: rgba(100, 198, 255, 0.658);
+}
+.myself{
+    position: absolute;
+ 
+    font-family:"Poppins", sans-serif ;
+    margin-top: 35px;
+}
+.myself span{
+    color: rgba(121, 206, 255, 0.5);
+    font-size: 4vw;
+    font-weight: 700;
+    
+}
+.myself h3{
+  
+    position: relative;
+    line-height: 100px;
+   margin-top: -20px !important;
+}
+.myself p{
+    color:#6B7280 ;
+    line-height: 30px;
+    margin-top: -20px;
+}
+
+.myself button{
+    padding: 15px 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+    color: rgba(121, 206, 255, 0.712);
+    border: 1px solid rgba(121, 206, 255, 0.733);
+    font-size: 20px;
+    background: transparent;
+    letter-spacing: 0.5px;
+}
+.myself button::after{
+    content: "";
+    position: absolute;
+   width: 0;
+    height: 55px;
+   
+   margin: -15px -105px;
+    background: rgba(121, 206, 255, 0.877);
+    transition: 0.5s;
+}
+.myself button:hover::after{
+     width: 135px;
+     
+    
+}
+.side-color{
+    position:absolute;
+    /* margin: 460px 1500px; */
+    width: 500px;
+    height: 500px;
+    background: rgba(15, 137, 207, 0.877);
+    border-radius: 0px;
+    transform: rotate(-133deg);
+}
+
+.about-section{
+    width: 100%;
+    height: 770px;
+   
+    background: rgba(9, 9, 22, 0.932);
+    padding: 100px;
+    position: relative;
+  margin-top: -800px;
+ font-family: "Poppins", sans-serif;
+}
+.about{
+    display: flex;
+}
+.line1
+{
+    position:relative;
+  margin-top: 50px;
+    width: 60vw;
+    height: 3px;
+    background-color: skyblue;
+}
+.about h1{
+    letter-spacing: 1.8px;
+    font-size: 4vw;
+    color: skyblue;
+}
+.about svg{
+    position:absolute;
+    left: 20%;
+    top: 8%;
+    width: 80%;
+  
+}
+.about-info{
+    position: absolute;
+}
+.about-info h5{
+    position: relative;
+   line-height: 50px;
+    padding: 80px 140px;
+   
+    color:#6B7280 ;
+}
+.skills{
+    position: absolute;
+    left: 10%;
+    top: 105%;
+    color: white;
+}
+.skill1{
+text-align: center;
+}
+.skill1 span{
+    position: relative;
+    /* font-size: 3vw; */
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.skill1 p{
+    margin-top: 5px;
+    font-size:1.3vw;
+}
+
+.services-section{
+    width: 100%;
+    height: 1270px !important;
+    color: white;
+    background: rgba(9, 9, 22, 0.932);
+  
+    padding: 100px;
+    position: relative;
+ margin-top: 200px;
+ font-family: "Poppins", sans-serif;
+   
+}
+
+.service{
+    display: flex;
+    gap: 15px;
+    padding: 0px 10px;
+}
+
+.service h1{
+    letter-spacing: 2px;
+    font-size: 4vw;
+    color: skyblue;
+}
+.service-info{
+    position: absolute;
+    top: 25%;
+    gap: 15px;
+    padding: 0px 15px;
+}
+
+.service-info h1{
+    position: relative;
+   font-size: 3vw;
+   letter-spacing: 1px;
+}
+.service-img img{
+    width: 3vw;
+}
+.part1{
+    width: 50vw;
+    position: relative;
+    top: -5%;
+}
+.part1 p{
+    color:#6B7280 ;
+    line-height: 50px;
+    padding: 50px 10px;
+    font-size: 25px;
+}
+.part1 button{
+    padding: 15px 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+    color: rgba(121, 206, 255, 0.712);
+    border: 1px solid rgba(121, 206, 255, 0.733);
+    font-size: 20px;
+    background: transparent;
+    letter-spacing: 0.5px;
+}
+.part1 button::after{
+    content: "";
+    position: absolute;
+   width: 0;
+    height: 55px;
+   
+   margin: -15px -105px;
+    background: rgba(121, 206, 255, 0.877);
+    transition: 0.5s;
+}
+.part1 button:hover::after{
+     width: 135px;
+     
+    
+}
+.part2{
+  position: absolute;
+  margin-bottom: 200px !important;
+}
+
+.box1{
+    display: flex;
+    background: rgba(255, 255, 255, 0.041);
+    backdrop-filter: blur(10px); 
+  padding:50px 120px;
+   
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+.box1 .service-img{
+    position: absolute;
+    left: 10%;
+    padding: 18px;
+    border-radius: 50%;
+   
+}
+.service-name{
+position: relative;
+left: 20%;
+}
+.service-name h4{
+    
+     margin-bottom: 10px;
+}
+.service-name span{
+    margin-top:10px;
+    font-size: 20px;
+    color:#6B7280 ;
+}
+.box1:nth-child(1) .service-img{
+     background: slateblue;
+ }
+ .box1:nth-child(2) .service-img{
+    background: rgb(180, 79, 219);
+}
+.box1:nth-child(3) .service-img{
+    background: rgb(96, 74, 238);
+}
+.contact-section{
+    width: 100%;
+    height: 470px !important;
+    color: white;
+    background: rgba(9, 9, 22, 0.932);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+    position: relative;
+ margin-top: 100px;
+ 
+   
+}
+.contact{
+    position: absolute;
+    top: 18%;
+}
+.contact h1{
+  text-align: center;
+  color: skyblue;
+  font-size: 50px;
+  letter-spacing: 0.7px;
+}
+.email{
+    display: flex;
+    top: 170% !important;
+    left: 30%;
+    position: absolute;
+    gap: 8px;
+    padding: 18px 30px;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.email:hover{
+    background: skyblue;
+}
+.email p{
+    font-size: 20px;
+}
+.footer{
+    display: flex;
+  gap: 30vw;
+     top: 25%;
+     justify-content: space-between;
+     padding: 0px 50px;
+     margin-top: 300px;
+}
+.contact-logo{
+   
+    display: flex;
+    padding: 0 20px;
+    gap: 20px;
+  
+}
+.contact-logo img{
+ 
+  width: 60px;
+    background: rgba(255, 255, 255, 0.041);
+    backdrop-filter: blur(10px); 
+    padding: 15px;
+}
+.footer span{
+    color: gray;
+    font-size: 25px;
+   margin-top: 7px;
+}
+
+
+@media(max-width:599px){
+    .my-img{
+        margin-left:120px !important;
+    }
+    .about h1{
+        margin-top: 10px;
+    }
+    .skills{
+     
+      top: 87%;
+    }
+    .skill1{
+        margin-right: -20px;
+    }
+    .about-info {
+        margin-top: -20px;
+    }
+}
+@media(max-width:699px){
+   
+    .hero-section{
+        height: 870px;
+    }
+    
+    .myself span{
+       font-size: 15px !important;
+     
+   }
+   .myself{
+      line-height: 10px;
+   }
+  
+    .about-section{
+        height: 500px !important;
+        padding-top: 50px !important;
+    }
+    .about-info h5{
+        line-height: 30px ;
+    }
+    .skills{
+        gap: 50px !important;
+    }
+    .box1 h4{
+        font-size: 3vw !important;
+    }
+    .box1:nth-child(2){
+        padding-right: 80px !important;
+    }
+    .service-info{
+        top: 35% !important;
+    }
+    .services-section{
+    padding: -50px -200px !important;
+}  
+
+
+}
+@media(max-width:799px){
+    .intro-section{
+        height: 800px !important;
+    }
+    .heading{
+        margin-top: 400px;
+        font-size: 5.6vw;
+    }
+   .hero-section{
+     margin-top: 145px !important;
+   }
+   .my-img {
+      left:40% !important;
+   }
+   
+   .myself h3{
+      line-height: 0px ;
+   }
+     
+   .line1{
+       top: -10%;
+   }
+   .about-section{
+       height: 650px;
+   }
+   .skills{
+  margin-left: -55px;
+       gap: 50px !important;
+   }
+   .service h1{
+       margin-top: 5px;
+   }
+   .part1 p{
+       margin-top: -30px;
+       line-height: 30px;
+   }
+   .part2{
+       margin-top: 330px !important;
+   }
+   .service-info{
+     margin-top: -50px !important;
+   }
+  
+  .box1{
+      width: 520px !important;
+  }
+    .service-img img{
+    width: 4vw !important;
+    }
+.service-name h4{
+    font-size: 30px !important;
+}
+
+}
+@media(max-width:999px){
+    .heading{
+        font-size: 5.6vw !important;
+    }
+    .hero-section{
+        margin-top: -5px;
+        height: 70vw !important;
+    }
+    .myself{
+      
+        width: 80vw !important;
+       left: 9.5%;
+      bottom: -700px;
+        text-align: center !important;
+    }
+   
+    .myself h3{
+        left: 10%;
+       
+        line-height:5px !important;
+    }
+    .my-img{
+        margin-top: -120px;
+      right: 30% !important;
+      width: 330px !important;
+      height: 230px !important;
+    }
+    .my-img img{
+        width: 340px !important;
+    }
+    .list{
+        margin-right: -250px !important;
+    }
+    .line1{
+        margin-top: 30px !important;
+    }
+    .about-info h5{
+       margin-top: -25px;
+       font-size: 1.8vw !important;
+    }
+    .skills{
+       left: 5% !important;
+        gap: 100px !important;
+    }
+    .service-info{
+
+        top:17% !important;
+    }
+    .part1 h1{
+        font-size: 3.5vw;
+    }
+    .part1 p{
+        font-size: 1.8vw 
+    }
+    .part2 h4{
+        font-size: 2.5vw !important;
+    }
+    .part2{
+     padding-top: -100px;
+    }
+   
+   .service-img img{
+       width: 4vw ;
+   }
+   .contact h1{
+       font-size: 40px;
+   }
+   .footer{
+       gap: 18vw;
+   }
+   .footer span{
+       font-size: 18px !important;
+   }
+   .contact-logo img{
+    width: 50px !important;
+    height: 50px !important;
+}
+}
+ 
+
+
+@media(max-width:1299px){
+
+    .heading{
+     margin-left: 27vw !important;
+     font-size: 5vw;
+    }
+    .myself span{
+           font-size: 32px !important;
+    }
+  .myself h3{
+      line-height: 80px !important;
+  }
+  .hero-section{
+      height: 900px !important;
+  }
+  .side-color{
+      bottom:-1440% !important;
+      left: 80% !important;
+  }
+  .services-section{
+      height: 1700px !important;
+  }
+  .line1{
+    margin-top: 40px;
+  }
+  .skills{
+      left: 7%;
+     
+  }
+  .skills p{
+     margin-top: 0px;
+  }
+  .service-info{
+  top: 18%;
+  padding: 0 20px ;
+  }
+  .box1{
+  width: 520px;
+  }
+  .service-name h4{
+      font-size: 2vw !important;
+  }
+  .part1{
+      width: 80vw !important;
+  }
+  .part2{
+  
+   margin-top: 550px;
+ width: 90vw;
+ right: -7% !important;
+   display: flex !important;
+flex-wrap: wrap !important;
+      gap: 20px; 
+  }
+  
+  .service-name h4{
+     font-size: 25px !important;
+   
+  }
+  .contact-logo img{
+      width: 4.5vw;
+      height: 4.5vw;
+  }
+  .footer span{
+      font-size: 20px;
+  }
+ 
+}
+@media(max-width:1385px){
+    .side-color{
+       left: 83%;
+    }
+    .service-name h4{
+        font-size: 20px;
+     }
+  } 
+    
+
+
+@media(max-width:1499px){
+    .heading{
+        margin-left:44vw ;
+        font-size: 5vw;
+    }
+   
+}
+@media(max-width:1599px){
+    .side-color{
+        bottom: -1460%;
+        right: -17% !important;
+    }
+}
+@media (max-width:1699px){
+    .intro-section{
+        height:950px;
+    }
+    .heading {
+        width: 50vw;
+      margin-top: 350px;
+      margin-left: 390px;
+    font-size:5.5vw ;
+    }
+    .logo h1{
+        font-size: 5vw;
+    }
+    .list{
+    
+       height: 1000px;
+     
+        margin-top: -230px;
+     margin-right: -300px !important;
+        font-size: 18px; 
+    }
+    .hero-section{
+        margin-top: -2px;
+        height: 1000px;
+    }
+    .hero{
+        display: flex;
+     margin-top: 220px;
+    }
+    .my-img img{
+        width: 34vw;
+       margin-left: -30px !important;
+    }
+    .my-img{
+       margin-left: -50px !important;
+       width: 33vw;
+         height: 23vw;
+       right: 3%;
+         position: absolute;
+    }
+    .myself{
+      width: 50vw;
+        margin-left: 1vw;
+        text-align: start;
+        margin-top: -50px !important;
+    }
+    .myself span{
+        font-size: 2.2vw;
+        margin-bottom: 80px;
+    }
+    .myself h3{
+        margin-top: 10px !important;
+        font-size:5vw !important;
+        display: flex;
+        margin-bottom: 40px;
+        line-height: 110px;
+    }
+   
+   .side-color{
+       position:absolute;
+      bottom: -1450%;
+      right: -15%;
+   }
+   .skills{
+       gap: 115px;
+       display: flex;
+   }
+   .line1{
+     
+       left: 3% !important;
+    
+   }
+   .about-info h5{
+    width: 90vw;
+    font-size: 1.5vw;
+   }
+   .skills span{
+       font-size: 2.5vw;
+   }
+   .service-info{
+       display: flex; 
+     
+   }
+   .part2{
+       right: -68%;
+   }
+  
+   .part1 p{
+       font-size: 1.5vw;
+   }
+   .service-name h4{
+    font-size: 25px;
+   }
+  
+}
