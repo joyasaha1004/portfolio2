@@ -90,13 +90,13 @@ nav .logo h1{
     font-size: 3vw;
     font-family:"Poppins", sans-serif ;
     position:absolute;
-    margin-left: 2700px ;
+  margin-right: -850px;
     margin-top: -620px;
    background: rgba(255, 255, 255, 0.041);
     backdrop-filter: blur(10px); 
  
     width: 400px;
-    right: -12%;
+    right: 13%;
   
 }
 .list h4{
@@ -154,7 +154,7 @@ transition: 0.3s;
 }
 .myself span{
     color: rgba(121, 206, 255, 0.5);
-    font-size: 4vw;
+   
     font-weight: 700;
     
 }
@@ -481,12 +481,13 @@ left: 20%;
     }
     
     .myself span{
-       font-size: 15px !important;
-     
-   }
-   .myself{
-      line-height: 10px;
-   }
+          margin-bottom: 70px;
+          line-height: 20px;
+          font-size: 2.2vw !important;
+    }
+    .my-img{
+     left: 35% !important;
+    }
   
     .about-section{
         height: 500px !important;
@@ -524,13 +525,14 @@ left: 20%;
    .hero-section{
      margin-top: 145px !important;
    }
+  
    .my-img {
       left:40% !important;
    }
-   
-   .myself h3{
-      line-height: 0px ;
-   }
+  
+  .myself span{
+      line-height: 10px;
+  }
      
    .line1{
        top: -10%;
@@ -582,11 +584,11 @@ left: 20%;
       bottom: -700px;
         text-align: center !important;
     }
-   
+  
     .myself h3{
         left: 10%;
-       
-        line-height:5px !important;
+    margin-bottom: 20px !important;
+  
     }
     .my-img{
         margin-top: -120px;
@@ -655,7 +657,7 @@ left: 20%;
      font-size: 5vw;
     }
     .myself span{
-           font-size: 32px !important;
+           font-size: 30px !important;
     }
   .myself h3{
       line-height: 80px !important;
@@ -756,9 +758,9 @@ flex-wrap: wrap !important;
     .list{
     
        height: 1000px;
-     
+     /* right: -24% !important; */
         margin-top: -230px;
-     margin-right: -300px !important;
+     /* margin-right: -300px !important; */
         font-size: 18px; 
     }
     .hero-section{
@@ -787,7 +789,7 @@ flex-wrap: wrap !important;
         margin-top: -50px !important;
     }
     .myself span{
-        font-size: 2.2vw;
+      font-size: 2.2vw;
         margin-bottom: 80px;
     }
     .myself h3{
@@ -819,7 +821,7 @@ flex-wrap: wrap !important;
    .skills span{
        font-size: 2.5vw;
    }
-   .service-info{
+   .service-info{ 
        display: flex; 
      
    }

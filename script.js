@@ -44,7 +44,7 @@ var cross = document.querySelector(".list i")
 var nav = gsap.timeline()
 
 nav.to(".list",{
-    right:250,
+    right:850,
     duration:0.5
 })
 
