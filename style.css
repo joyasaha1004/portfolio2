@@ -53,8 +53,8 @@ nav{
        top: 0;
        background: rgba(255, 255, 255, 0.103);
        backdrop-filter: blur(5px);
-       height: 100vh;
-       width: 30%;
+       height: 89vh;
+       width: 49vh;
      padding: 2vmax 0;
      transition: 0.5s ease; 
 }
@@ -69,9 +69,19 @@ nav{
   .list i{
    justify-self: end;
   }
-  /* .hero-section{
-      padding-bottom: 15vmax !important;
-  } */
+  .hero-section{
+      padding: 8vmax 2vmax !important;
+  }
+ .hero-info{
+     display: flex;
+     flex-direction: column !important;
+ }
+ .myself{
+     width: 89% !important;
+ }
+ .myself p{
+     font-size: 1.4vmax !important;
+ }
 }
 @media(max-width:2500px){
 
@@ -94,16 +104,14 @@ padding: 1vmax 2vmax;
     }
    .hero-section{
        position: relative;
-       padding: 0 2vmax;
-       height: 56vmax;
+       padding: 16vmax 2vmax;
+       /* height: 56vmax; */
          align-content: center;
        overflow: hidden;
    }
    .hero-info{
        display: flex;
        flex-direction: row-reverse;
-      
-      /* padding-bottom: 18vmax; */
        justify-content: space-between;
        gap: 5vmax;
       
