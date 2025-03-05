@@ -1,22 +1,166 @@
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- 
+  overflow-x: hidden;
 }
 html,
 body{
     width: 100%;
-  background: #000;
-  overflow-x: hidden;
+    background: rgba(9, 9, 22, 0.932);
+ color: white;
+ font-family:"Poppins", sans-serif;
 }
-.intro-section{
+nav{ 
+    display: flex; 
+    align-items: center;
+    height: 5vmax;
+    
+    background: rgba(255, 255, 255, 0.041);
+ justify-content: space-between;
+}
+.nav-item{
+    display: flex;
+    list-style: none;
+ position: relative;
+}
+.list ul li{
+    cursor: pointer; 
+}
+
+ nav i{
+        display: none;
+    }
+.myself span{
+    
+    color: rgba(121, 206, 255, 0.5);
+   
+    font-weight: 700;
+    
+}
+@media(max-width:850px){
+   
+  nav i{
+        display: block;
+        font-size: 2.3vmax;
+        
+    }
+    .list{
+     
+       position: absolute;
+       right: -40%;
+       top: 0;
+       background: rgba(255, 255, 255, 0.103);
+       backdrop-filter: blur(5px);
+       height: 100vh;
+       width: 30%;
+     padding: 2vmax 0;
+     transition: 0.5s ease; 
+}
+
+    .nav-item{  
+        align-items: center;
+        display: flex;
+       flex-direction: column;
+      padding-top: 12vmax;
+      color: white;
+    }
+  .list i{
+   justify-self: end;
+  }
+  /* .hero-section{
+      padding-bottom: 15vmax !important;
+  } */
+}
+@media(max-width:2500px){
+
+    nav{
+  
+padding: 1vmax 2vmax;
+
+    }
+    .logo{
+     font-size: 1.3vmax;
+    }
+   
+    .list ul{
+         gap: 8.2vmax; 
+         
+    }
+    .list ul li{
+        font-size: 1.4vmax;
+      
+    }
+   .hero-section{
+       position: relative;
+       padding: 0 2vmax;
+       height: 56vmax;
+         align-content: center;
+       overflow: hidden;
+   }
+   .hero-info{
+       display: flex;
+       flex-direction: row-reverse;
+      
+      /* padding-bottom: 18vmax; */
+       justify-content: space-between;
+       gap: 5vmax;
+      
+   }
+   .profile-img{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   .profile-img img{
+       width: 32vmax;
+   }
+   .myself{
+       width: 57%;
+   }
+   .myself span{
+       font-size: 2vmax;
+   }
+   .myself h3{
+       font-size: 4.5vmax;
+   }
+   .myself p{
+       font-size: 1.2vmax;
+       color:#6B7280 ;
+       margin-top:0.5vmax ;
+       line-height: 2.4vmax;
+   }
+   .myself button{
+       margin-top: 1.5vmax;
+       padding: 0.8vmax 1.6vmax;
+       font-size: 1.5vmax;
+       color: rgba(121, 206, 255, 0.712);
+       border:0.1em solid rgba(121, 206, 255, 0.733);
+       background: transparent;
+   }
+  .side-color{
+    
+     position: absolute;
+     right: -6vmax;
+     bottom: -14vmax;
+    /* display: flex;
+    justify-self: right;
+   margin-top: 12vmax; */
+      width: 20vmax;
+      height: 28vmax;
+    background: rgba(15, 137, 207, 0.877);
+    border-radius: 0px;
+    transform: rotate(-128deg);
+    z-index: 1;
+  }
+}
+
+/* .intro-section{
    
     width: 100%;
     height: 977px;
- background: rgba(3, 3, 15, 0.932);
+
 
 }
 
@@ -31,7 +175,7 @@ transform: rotateY(20deg);
 align-items: center;
 margin:  290px 30px;
 font-size: 5.6vw;
-font-family:"Poppins", sans-serif;
+
 background: rgba(255, 255, 255, 0.041);
 
 border: 2px solid rgba(163, 221, 255, 0.5);
@@ -130,6 +274,7 @@ transition: 0.3s;
 
 }
 .hero{
+    position: relative;
     margin-top:100px ;
     padding: 30px;
 }
@@ -140,7 +285,7 @@ transition: 0.3s;
 }
 .my-img{
     margin-left: 20px;
-    position:absolute;
+    position:relative;
     width:57vw ;
     height: 38vw;
     border-radius: 22px;
@@ -197,7 +342,6 @@ transition: 0.3s;
 }
 .side-color{
     position:absolute;
-    /* margin: 460px 1500px; */
     width: 500px;
     height: 500px;
     background: rgba(15, 137, 207, 0.877);
@@ -259,7 +403,7 @@ text-align: center;
 }
 .skill1 span{
     position: relative;
-    /* font-size: 3vw; */
+    font-size: 3vw;
     letter-spacing: 0.5px;
     font-weight: 600;
 }
@@ -483,12 +627,13 @@ left: 20%;
     .myself span{
           margin-bottom: 70px;
           line-height: 20px;
-          font-size: 2.2vw !important;
+         
     }
     .my-img{
      left: 35% !important;
+     
     }
-  
+    
     .about-section{
         height: 500px !important;
         padding-top: 50px !important;
@@ -532,6 +677,7 @@ left: 20%;
   
   .myself span{
       line-height: 10px;
+      font-size: 20px !important;
   }
      
    .line1{
@@ -577,22 +723,26 @@ left: 20%;
         margin-top: -5px;
         height: 70vw !important;
     }
+    .logo h1{
+        font-size: 25px !important;
+}
     .myself{
       
-        width: 80vw !important;
+        width: 82vw !important;
        left: 9.5%;
-      bottom: -700px;
+      bottom: -420px;
         text-align: center !important;
     }
   
     .myself h3{
+
         left: 10%;
     margin-bottom: 20px !important;
   
     }
     .my-img{
         margin-top: -120px;
-      right: 30% !important;
+      right: 28% !important;
       width: 330px !important;
       height: 230px !important;
     }
@@ -758,10 +908,8 @@ flex-wrap: wrap !important;
     .list{
     
        height: 1000px;
-     /* right: -24% !important; */
         margin-top: -230px;
-     /* margin-right: -300px !important; */
-        font-size: 18px; 
+            font-size: 18px; 
     }
     .hero-section{
         margin-top: -2px;
@@ -802,7 +950,7 @@ flex-wrap: wrap !important;
    
    .side-color{
        position:absolute;
-      bottom: -1450%;
+      bottom: -1485%;
       right: -15%;
    }
    .skills{
@@ -836,4 +984,4 @@ flex-wrap: wrap !important;
     font-size: 25px;
    }
   
-}
+}/*
