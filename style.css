@@ -1,30 +1,31 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  overflow-x: hidden;
+ 
 }
 html,
-body{
+body{ 
+    overflow-x: hidden;
     width: 100%;
-    background: rgba(9, 9, 22, 0.932);
+    background: black;
  color: white;
  font-family:"Poppins", sans-serif;
 }
 nav{ 
     display: flex; 
     align-items: center;
-    height: 5vmax;
-    
-    background: rgba(255, 255, 255, 0.041);
+    background: rgba(255, 255, 255, 0.103);
+    backdrop-filter: blur(5px);
  justify-content: space-between;
+
 }
 .nav-item{
     display: flex;
     list-style: none;
- position: relative;
+ 
 }
+
 .list ul li{
     cursor: pointer; 
 }
@@ -39,6 +40,37 @@ nav{
     font-weight: 700;
     
 }
+
+.about-section{
+    
+    background: rgba(9, 9, 22, 0.932);
+    height: fit-content;
+}
+.about h1{
+    color: skyblue;
+}
+/* .about svg{
+    position:absolute;
+    
+} */
+/* .about-info{
+    position: absolute;
+} */
+
+.about-info h5{
+ 
+    color:#6B7280 ;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    width: 100%;
+}
+.skill1{
+text-align: center;
+}
+
 @media(max-width:850px){
    
   nav i{
@@ -46,33 +78,51 @@ nav{
         font-size: 2.3vmax;
         
     }
-    .list{
-     
-       position: absolute;
+
+     .list{
+       
+      position:absolute;
        right: -40%;
        top: 0;
-       background: rgba(255, 255, 255, 0.103);
-       backdrop-filter: blur(5px);
+       background: rgba(255, 255, 255, 0.041);
+       backdrop-filter: blur(10px); 
        height: 89vh;
        width: 49vh;
      padding: 2vmax 0;
-     transition: 0.5s ease; 
-}
+     transition: 0.5s ease;
+    
+ }
+ .menu-icon{
+    position: relative;
+ }
 
-    .nav-item{  
-        align-items: center;
+    .nav-item{ 
+        color: white;
         display: flex;
-       flex-direction: column;
-      padding-top: 12vmax;
-      color: white;
-    }
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Make sure it fits */
+        overflow-y: auto; /* I
+        /* position:relative;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+         gap: 1.5rem; /*Space between items*/
+        /* max-height: 100%; */
+        
+    } 
   .list i{
    justify-self: end;
   }
   .hero-section{
       padding: 8vmax 2vmax !important;
+     position: relative;
+
   }
  .hero-info{
+    background: none;
      display: flex;
      flex-direction: column !important;
  }
@@ -86,7 +136,7 @@ nav{
 @media(max-width:2500px){
 
     nav{
-  
+  height: 5vmax;
 padding: 1vmax 2vmax;
 
     }
@@ -103,11 +153,16 @@ padding: 1vmax 2vmax;
       
     }
    .hero-section{
-       position: relative;
-       padding: 16vmax 2vmax;
+       position: relative; 
+        padding: 16vmax 2vmax;
+       margin-bottom: 10vmax;
+      
        /* height: 56vmax; */
          align-content: center;
        overflow: hidden;
+       /* background:rgba(9, 9, 22, 0.932) ; */
+       background: rgba(9, 9, 22, 0.932); /* Solid dark color */
+
    }
    .hero-info{
        display: flex;
@@ -162,9 +217,57 @@ padding: 1vmax 2vmax;
     transform: rotate(-128deg);
     z-index: 1;
   }
+  .about-section{
+    /* position: relative; */
+      /* margin-top: 12vmax; */
+      padding: 2.7vmax 2.5vmax;
+      height: fit-content;
+  }
+  .about{
+      display: flex;
+     align-items: center;
+     gap: 5vmax;
+  }
+  .about h1{
+      font-size: 3vmax;
+      color: skyblue;
+  }
+  .line1{
+    position:relative;
+   
+      width: 60vw;
+      height: 0.3vmax;
+      background-color: skyblue;
+  }
+ .about-info{
+     width: 80%;
+     position: relative;
+     top: 2vmax;
+     justify-self: end;
+ }
+.about-info h5{
+    font-size: 1.4vmax;
+    line-height: 3.5vmax;
+  
 }
+.skills{
+  
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+    margin-top: 7vmax;
+    /* gap: 5vmax; */
+}
+.skill1 span{
+    font-size: 2.5vmax;
+    font-weight: 600;
+}
+.skill1 p{
+  font-size: 1.2vmax;
+}
+} 
 
-/* .intro-section{
+ /*.intro-section{
    
     width: 100%;
     height: 977px;
@@ -356,8 +459,8 @@ transition: 0.3s;
     border-radius: 0px;
     transform: rotate(-133deg);
 }
-
-.about-section{
+*/
+/*.about-section{
     width: 100%;
     height: 770px;
    
