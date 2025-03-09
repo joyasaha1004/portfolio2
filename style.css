@@ -62,15 +62,23 @@ nav{
     color:#6B7280 ;
 }
 .skills{
-    display: flex;
-    flex-wrap: wrap;
+  
     color: white;
     width: 100%;
 }
 .skill1{
 text-align: center;
 }
-
+@media(max-width:500px){
+    /* .machine-learning{
+        display: block;
+        margin: 0 auto;
+    } */
+     .skills{
+        flex-direction: column;
+        gap: 4vmax !important;
+     }
+}
 @media(max-width:850px){
    
   nav i{
@@ -82,12 +90,12 @@ text-align: center;
      .list{
        
       position:absolute;
-       right: -40%;
+       right: -100%;
        top: 0;
        background: rgba(255, 255, 255, 0.041);
        backdrop-filter: blur(10px); 
        height: 89vh;
-       width: 49vh;
+       width: 35vmax;
      padding: 2vmax 0;
      transition: 0.5s ease;
     
@@ -251,12 +259,15 @@ padding: 1vmax 2vmax;
   
 }
 .skills{
-  
-    justify-content: space-between;
+  padding: 0 2vmax;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
     align-items: center;
     /* position: relative; */
     margin-top: 7vmax;
-    /* gap: 5vmax; */
+    gap: 22%;
 }
 .skill1 span{
     font-size: 2.5vmax;
