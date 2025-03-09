@@ -69,14 +69,25 @@ nav{
 .skill1{
 text-align: center;
 }
-@media(max-width:500px){
-    /* .machine-learning{
+@media(max-width:220px){
+    .skill1{
         display: block;
         margin: 0 auto;
-    } */
+    }
+    .machine-learning{
+        padding-top: 0 !important;
+    }
+}
+@media(max-width:500px){
+    .machine-learning{
+        display: block;
+        margin: 0 auto;
+        padding-top: 3vmax;
+    }
      .skills{
-        flex-direction: column;
-        gap: 4vmax !important;
+        /* flex-direction: column;
+        gap: 4vmax !important; */
+        justify-content: space-between;
      }
 }
 @media(max-width:850px){
