@@ -41,7 +41,7 @@ nav{
     
 }
 
-.about-section{
+.about-section,.services-section{
     
     background: rgba(9, 9, 22, 0.932);
     height: fit-content;
@@ -57,7 +57,7 @@ nav{
     position: absolute;
 } */
 
-.about-info h5{
+.about-info h5,.part1 p{
  
     color:#6B7280 ;
 }
@@ -68,6 +68,12 @@ nav{
 }
 .skill1{
 text-align: center;
+}
+.part2{
+    display: flex;
+}
+.box1{
+    text-align: center;
 }
 @media(max-width:220px){
     .skill1{
@@ -213,7 +219,7 @@ padding: 1vmax 2vmax;
        margin-top:0.5vmax ;
        line-height: 2.4vmax;
    }
-   .myself button{
+   .myself button,.part1 button{
        margin-top: 1.5vmax;
        padding: 0.8vmax 1.6vmax;
        font-size: 1.5vmax;
@@ -236,18 +242,19 @@ padding: 1vmax 2vmax;
     transform: rotate(-128deg);
     z-index: 1;
   }
-  .about-section{
+  .about-section,.services-section{
     /* position: relative; */
       /* margin-top: 12vmax; */
       padding: 2.7vmax 2.5vmax;
       height: fit-content;
+      margin-bottom: 10vmax;
   }
-  .about{
+  .about,.service{
       display: flex;
      align-items: center;
      gap: 5vmax;
   }
-  .about h1{
+  .about h1,.service h1{
       font-size: 3vmax;
       color: skyblue;
   }
@@ -264,12 +271,12 @@ padding: 1vmax 2vmax;
      top: 2vmax;
      justify-self: end;
  }
-.about-info h5{
+.about-info h5,.part1{
     font-size: 1.4vmax;
     line-height: 3.5vmax;
   
 }
-.skills{
+.skills,.part2{
   padding: 0 2vmax;
   display: flex;
   flex-wrap: wrap;
@@ -278,15 +285,45 @@ padding: 1vmax 2vmax;
     align-items: center;
     /* position: relative; */
     margin-top: 7vmax;
-    gap: 22%;
+   
+}
+.skills{
+     gap: 22%;
 }
 .skill1 span{
     font-size: 2.5vmax;
     font-weight: 600;
 }
-.skill1 p{
+.skill1 p,.service-name span{
   font-size: 1.2vmax;
 }
+.part1{
+    padding-top: 3.5vmax;
+    position: relative;
+    padding-left: 4vmax;
+}
+.service-info h1{
+  font-size: 2.2vmax;
+}
+.part1 p{
+    width: 80%;
+}
+.part2{
+    margin-top: 6vmax;
+    gap: 24%;
+   
+}
+.part2 img{
+    width: 4vmax;
+}
+.service-name span{
+    font-size: 1.7vmax;
+    font-weight: 600;
+}
+.service-name p{
+    font-size: 1.3vmax;
+}
+
 } 
 
  /*.intro-section{
