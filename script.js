@@ -145,6 +145,9 @@ var tl = gsap.timeline()
    cross.addEventListener("click",function(){
       tl.reverse()
    })
+
+ 
+
 // gsap.to(".hero-section",{
 //     y:-980,
 //     duration:1,

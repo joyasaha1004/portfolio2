@@ -83,7 +83,24 @@ text-align: center;
     .machine-learning{
         padding-top: 0 !important;
     }
+    body .part2 {
+        grid-template-columns: 1fr !important; /* More specific override */
+    }
 }
+@media(max-width:350px){
+   .part2{
+    /* display: flex !important;
+    flex-direction:column;
+    gap: 4vmax; */
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 6vmax;
+   }
+   .part2 > :last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+} 
+}
+
 @media(max-width:500px){
     .machine-learning{
         display: block;
@@ -95,6 +112,7 @@ text-align: center;
         gap: 4vmax !important; */
         justify-content: space-between;
      }
+    
 }
 @media(max-width:850px){
    
@@ -276,7 +294,7 @@ padding: 1vmax 2vmax;
     line-height: 3.5vmax;
   
 }
-.skills,.part2{
+.skills{
   padding: 0 2vmax;
   display: flex;
   flex-wrap: wrap;
@@ -306,17 +324,26 @@ padding: 1vmax 2vmax;
   font-size: 2.2vmax;
 }
 .part1 p{
-    width: 80%;
+    width: 90%;
 }
 .part2{
     margin-top: 6vmax;
-    gap: 24%;
-   
+    display: grid;
+  grid-template-columns: 33% 35% 33%;
+  text-align: center;
 }
-.part2 img{
+.service-img img{
     width: 4vmax;
+   
+
+}
+.service-img{
+     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .service-name span{
+   white-space: nowrap;
     font-size: 1.7vmax;
     font-weight: 600;
 }
