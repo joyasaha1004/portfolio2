@@ -41,7 +41,7 @@ nav{
     
 }
 
-.about-section,.services-section{
+.about-section,.services-section,.contact-section{
     
     background: rgba(9, 9, 22, 0.932);
     height: fit-content;
@@ -261,12 +261,17 @@ padding: 1vmax 2vmax;
     z-index: 1;
   }
   .about-section,.services-section{
-    /* position: relative; */
-      /* margin-top: 12vmax; */
-      padding: 2.7vmax 2.5vmax;
-      height: fit-content;
-      margin-bottom: 10vmax;
+     margin-bottom: 10vmax;
+     padding: 2.7vmax 2.5vmax;
   }
+  .about-section,.services-section,.contact-section{
+      height: fit-content;
+     
+  }
+  .contact-section{
+    padding-top: 2.7vmax;
+  }
+ 
   .about,.service{
       display: flex;
      align-items: center;
@@ -349,6 +354,58 @@ padding: 1vmax 2vmax;
 }
 .service-name p{
     font-size: 1.3vmax;
+}
+.contact h1{
+    font-size:2.3vmax;
+    position: relative;
+    bottom: 1vmax;
+}
+.contact-section{
+     position: relative;
+     text-align: center;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.email{
+    display: flex;
+    font-size: 1.2vmax;
+    gap: 0.5vmax;
+    border: 0.2vmax solid skyblue;
+    color: skyblue;
+  background: transparent;
+    padding: 0.7vmax 1vmax;
+    white-space: nowrap;
+   justify-self: center;
+  margin-bottom: 1.5vmax;
+    
+}
+.contact-logo{
+    position: relative;
+    align-items: center;
+    justify-self: center;
+}
+.email img{
+    width: 1vmax;
+}
+.contact-logo{
+   
+}
+.contact-logo img{
+    width: 2vmax;
+    margin-right: 1.2vmax;
+}
+.copyright{
+  
+    margin-top: 2vmax;
+    width: 100%;
+    border-top: 0.2vmax solid gray;
+}
+.copyright span{
+   font-size: 1vmax;
+  margin-top: 0.2vmax;
 }
 
 } 
