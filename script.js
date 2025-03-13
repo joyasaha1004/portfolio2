@@ -121,19 +121,23 @@
 var list = document.querySelector(".list");
 var menu = document.querySelector(".menu-icon");
 var cross = document.querySelector(".list i");
-
+let mm = gsap.matchMedia();
 var tl = gsap.timeline()
-
+mm.add("(max-width: 850px)", () => {
   tl.to(".list",{
       right:0,
-      duration:0.4
+      duration:0.5
   })
-//   tl.from(".list li",{
-//       x:150,
-//       stagger:0.3,
-//       opacity:0,
-//       duration:0.6
-//   })
+  tl.to(".menu-icon",{
+    opacity:0,
+   
+  })
+  tl.from(".list li",{
+      x:150,
+      stagger:0.3,
+       opacity:0,
+      duration:0.5
+  })
   tl.from(".list i",{
       opacity:0
   })
@@ -146,7 +150,7 @@ var tl = gsap.timeline()
       tl.reverse()
    })
 
- 
+  });
 
 // gsap.to(".hero-section",{
 //     y:-980,

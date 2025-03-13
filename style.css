@@ -89,9 +89,7 @@ text-align: center;
 }
 @media(max-width:400px){
    .part2{
-    /* display: flex !important;
-    flex-direction:column;
-    gap: 4vmax; */
+    
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 6vmax;
    }
@@ -123,49 +121,52 @@ text-align: center;
     }
 
      .list{
-       
+       overflow: hidden;
       position:absolute;
        right: -100%;
        top: 0;
        background: rgba(255, 255, 255, 0.041);
        backdrop-filter: blur(10px); 
-       height: 89vh;
+       height: 78vmax;
        width: 35vmax;
-     padding: 2vmax 0;
+     padding: 2.5vmax 0;
      transition: 0.5s ease;
-    
+     
  }
  .menu-icon{
     position: relative;
- }
+ } 
 
     .nav-item{ 
-        color: white;
+        
+         color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh; /* Make sure it fits */
-        overflow-y: auto; /* I
-        /* position:relative;
-        align-items: center;
+        padding-top: 11vmax;
+        z-index: 50;
+        /* height: 30vh;  */
+        overflow-x: hidden; 
+      
+         /*align-items: center;
         justify-content: center;
         display: flex;
         flex-direction: column;
          gap: 1.5rem; /*Space between items*/
-        /* max-height: 100%; */
+     /* max-height: 100%; */
         
     } 
   .list i{
+   
    justify-self: end;
   }
-  .hero-section{
+  /* .hero-section{
       padding: 8vmax 2vmax !important;
      position: relative;
 
-  }
+  } */
  .hero-info{
-    background: none;
      display: flex;
      flex-direction: column !important;
  }
@@ -183,6 +184,10 @@ text-align: center;
 padding: 1vmax 2vmax;
 
     }
+    .nav-item{
+        color: white;
+        opacity: 1;
+    }
     .logo{
      font-size: 1.3vmax;
     }
@@ -196,16 +201,20 @@ padding: 1vmax 2vmax;
       
     }
    .hero-section{
-       position: relative; 
-        padding: 16vmax 2vmax;
-       margin-bottom: 10vmax;
+     
+         margin-bottom: 10vmax;
       
        /* height: 56vmax; */
          align-content: center;
        overflow: hidden;
        /* background:rgba(9, 9, 22, 0.932) ; */
-       background: rgba(9, 9, 22, 0.932); /* Solid dark color */
+       background: rgba(9, 9, 22,0.932); /* Solid dark color */
 
+   }
+   .hero-items{
+    position: relative;
+    padding: 13vmax 2vmax;
+      
    }
    .hero-info{
        display: flex;
@@ -390,9 +399,7 @@ padding: 1vmax 2vmax;
 .email img{
     width: 1vmax;
 }
-.contact-logo{
-   
-}
+
 .contact-logo img{
     width: 2vmax;
     margin-right: 1.2vmax;
