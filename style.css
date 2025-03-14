@@ -116,7 +116,7 @@ text-align: center;
    
   nav i{
         display: block;
-        font-size: 2.3vmax;
+        font-size: 2.5vmax;
         
     }
 
@@ -125,8 +125,8 @@ text-align: center;
       position:absolute;
        right: -100%;
        top: 0;
-       background: rgba(255, 255, 255, 0.041);
-       backdrop-filter: blur(10px); 
+       background: rgba(255, 255, 255, 0.082);
+       backdrop-filter: blur(50px); 
        height: 78vmax;
        width: 35vmax;
      padding: 2.5vmax 0;
@@ -135,6 +135,7 @@ text-align: center;
  }
  .menu-icon{
     position: relative;
+    font-size: 2.3vmax;
  } 
 
     .nav-item{ 
@@ -146,7 +147,6 @@ text-align: center;
         justify-content: center;
         padding-top: 11vmax;
         z-index: 50;
-        /* height: 30vh;  */
         overflow-x: hidden; 
       
          /*align-items: center;
@@ -160,6 +160,7 @@ text-align: center;
   .list i{
    
    justify-self: end;
+   margin: 0vmax 1vmax;
   }
   /* .hero-section{
       padding: 8vmax 2vmax !important;
